@@ -64,7 +64,7 @@ const LandingPage = () => {
 					<div className='w-full lg:w-1/2'>
 						<div className='bg-gray-800 text-white p-6 rounded-md shadow-lg h-auto lg:h-[350px]'>
 							<h3 className='text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8'>Platforma haqida</h3>
-							<p className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-relaxed'>
+							<p className='text-base sm:text-lg md:text-xl lg:text-xl font-semibold leading-relaxed'>
 								Olov - do‘konlar uchun reklama joylashtirishning innovatsion platformasi. Mahsulotlaringizni kengroq auditoriyaga tanishtirishni va mijozlar oqimini ko‘paytirishni xohlaysizmi? Olov platformasi yordamida buni oson amalga oshiring!
 							</p>
 							<p className='text-sm sm:text-base md:text-lg mt-2 sm:mt-3 md:mt-4'>Platformamiz orqali reklama joylashtirish tez va qulay.</p>

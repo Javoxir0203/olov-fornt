@@ -74,23 +74,23 @@ const LandingPage = () => {
 			</div>
 
 			{/* Contact Section */}
-			<section className='py-12 px-6 h-screen bg-gray-900 flex flex-col lg:flex-row items-center justify-between'>
+			<section className='py-12 px-6 gap-4 md:gap-6 h-screen bg-gray-900 flex flex-col lg:flex-row items-center justify-between'>
 				{/* Left Section - Contact Form */}
 				<div className='max-w-4xl mx-auto text-center md:text-left'>
 					<h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-6'>Biz bilan bog‘laning</h2>
 					<p className='text-lg sm:text-xl leading-relaxed mb-8'>Do‘koningizni reklama qilish yoki qo‘shimcha ma’lumot olish uchun bizga murojaat qiling.</p>
-					<form className='grid gap-6'>
-						<Input type='text' placeholder='Ismingiz' className='w-full p-4 bg-gray-700 text-white rounded-md' />
-						<Input type='email' placeholder='Email manzilingiz' className='w-full p-4 bg-gray-700 text-white rounded-md' />
-						<Textarea placeholder='Xabaringizni yozing' className='w-full p-4 bg-gray-700 text-white rounded-md' />
-						<Button type='submit' className='py-3 px-6 bg-red-600 hover:bg-red-700 rounded-md text-white font-bold uppercase tracking-wide transition duration-300'>
+					<form className='grid gap-4 md:gap-6'>
+						<Input type='text' placeholder='Ismingiz' className='w-full p-6 bg-gray-700 text-white rounded-md' />
+						<Input type='email' placeholder='Email manzilingiz' className='w-full p-6 bg-gray-700 text-white rounded-md' />
+						<Textarea placeholder='Xabaringizni yozing' className='w-full p-6 bg-gray-700 text-white rounded-md' />
+						<Button type='submit' className='py-6 px-6 bg-red-600 hover:bg-red-700 rounded-md text-white font-bold uppercase'>
 							Xabar yuboring
 						</Button>
 					</form>
 				</div>
 
 				{/* Android and iOS Download Section */}
-				<div className=' flex flex-col md:flex-row justify-center gap-8'>
+				<div className='flex flex-col md:flex-row justify-center gap-4 md:gap-6'>
 					<Link href={'https://play.google.com/store/games'}>
 						<p className='bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md flex items-center space-x-4'>
 							<FaGooglePlay className='text-2xl' />

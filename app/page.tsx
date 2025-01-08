@@ -49,19 +49,25 @@ const LandingPage = () => {
 							<Input type='text' placeholder='Ismingiz va familiyangiz' className='w-full p-6 rounded-md bg-white text-gray-800' />
 							<Input type='text' placeholder='+998 XX XXX XX XX' className='w-full p-6 rounded-md bg-white text-gray-800' />
 							<div className='flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8'>
-								<Link href='#' className='bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-bold w-full sm:w-auto'>Reklama boshlash</Link>
-								<Link href='+998 77 001 59 99' className='bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-bold w-full sm:w-auto'>Biz bilan bog‘laning</Link>
+								<Link href='#' className='bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-bold w-full sm:w-auto'>
+									Reklama boshlash
+								</Link>
+								<Link href='+998 77 001 59 99' className='bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-bold w-full sm:w-auto'>
+									Biz bilan bog‘laning
+								</Link>
 							</div>
 						</div>
 						<p className='mt-4 text-sm text-gray-200'>Tugmani bosish orqali siz bizning shartlarimizga rozilik bildirasiz.</p>
 					</div>
 
 					{/* Right Content */}
-					<div className='w-full lg:w-1/2 '>
-						<div className='bg-gray-800 text-white p-6 rounded-md shadow-lg h-[350px] '>
-							<h3 className='text-4xl font-bold mb-8'>Platforma haqida</h3>
-							<p className='text-xl leading-relaxed'>Olov - do‘konlar uchun reklama joylashtirishning innovatsion platformasi. Mahsulotlaringizni kengroq auditoriyaga tanishtirishni va mijozlar oqimini ko‘paytirishni xohlaysizmi? Olov platformasi yordamida buni oson amalga oshiring!</p>
-							<p className='mt-4'>Platformamiz orqali reklama joylashtirish tez va qulay.</p>
+					<div className='w-full lg:w-1/2'>
+						<div className='bg-gray-800 text-white p-6 rounded-md shadow-lg h-auto lg:h-[350px]'>
+							<h3 className='text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8'>Platforma haqida</h3>
+							<p className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold leading-relaxed'>
+								Olov - do‘konlar uchun reklama joylashtirishning innovatsion platformasi. Mahsulotlaringizni kengroq auditoriyaga tanishtirishni va mijozlar oqimini ko‘paytirishni xohlaysizmi? Olov platformasi yordamida buni oson amalga oshiring!
+							</p>
+							<p className='text-sm sm:text-base md:text-lg mt-2 sm:mt-3 md:mt-4'>Platformamiz orqali reklama joylashtirish tez va qulay.</p>
 						</div>
 					</div>
 				</main>

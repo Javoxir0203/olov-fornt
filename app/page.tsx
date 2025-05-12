@@ -31,10 +31,11 @@ const LandingPage = () => {
 
 	return (
 		<div className='font-sans bg-gray-900 text-white'>
+			import Head from 'next/head'
 			<Head>
 				<meta name='google-site-verification' content='7Y7F3yoq29oVJycbzyi4J59HWp1O_EqQMoMROgcBjww' />
+				<title>Olov Platforma</title>
 			</Head>
-
 			<div className='min-h-screen flex flex-col'>
 				{/* Header */}
 				<header className='py-8'>
@@ -76,7 +77,6 @@ const LandingPage = () => {
 					</div>
 				</main>
 			</div>
-
 			{/* Contact Section */}
 			<section className='py-12 px-6 gap-4 md:gap-6 h-screen bg-gray-900 flex flex-col lg:flex-row items-center justify-between'>
 				{/* Left Section - Contact Form */}

@@ -12,7 +12,6 @@ const geistMono = Geist_Mono({
 	subsets: ['latin']
 })
 
-// Next.js metadata API orqali head yoziladi — qo'lda Head ishlatilmaydi
 export const metadata: Metadata = {
 	title: 'Olov',
 	description: 'Do‘konlaringizni reklama qiling',
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
 	},
 	viewport: 'width=device-width, initial-scale=1',
 	verification: {
-		google: '7Y7F3yoq29oVJycbzyi4J59HWp1O_EqQMoMROgcBjww'
+		google: ['7Y7F3yoq29oVJycbzyi4J59HWp1O_EqQMoMROgcBjww', '_LsNwGbKq9ko4qiiO6lEA11hkeBog6WRV1WnI_BhWII']
 	}
 }
 

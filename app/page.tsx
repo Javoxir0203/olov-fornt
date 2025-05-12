@@ -5,7 +5,6 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { FaApple, FaGooglePlay } from 'react-icons/fa'
 import Link from 'next/link'
-import Head from 'next/head'
 
 const LandingPage = () => {
 	const [visitorCount, setVisitorCount] = useState(0)
@@ -30,13 +29,7 @@ const LandingPage = () => {
 
 	return (
 		<div className='font-sans bg-gray-900 text-white'>
-			<Head>
-				<meta name='google-site-verification' content='7Y7F3yoq29oVJycbzyi4J59HWp1O_EqQMoMROgcBjww' />
-				<title>Olov</title>
-				<meta name='description' content='Do‘konlaringizni reklama qiling' />
-				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<link rel='icon' href='/favicon.ico' />
-			</Head>
+
 			<div className='min-h-screen flex flex-col'>
 				<header className='py-8'>
 					<div className='max-w-7xl mx-auto px-6 flex justify-between items-center'></div>

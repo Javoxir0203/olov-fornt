@@ -5,6 +5,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
 import { FaApple, FaGooglePlay } from 'react-icons/fa'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const LandingPage = () => {
 	const [visitorCount, setVisitorCount] = useState(0)
@@ -24,13 +25,16 @@ const LandingPage = () => {
 	useEffect(() => {
 		if (visitorCount > 0) {
 			localStorage.setItem('visitorCount', visitorCount.toString())
-
 			console.log(`Saytga kirgan foydalanuvchilar soni: ${visitorCount}`)
 		}
 	}, [visitorCount])
 
 	return (
 		<div className='font-sans bg-gray-900 text-white'>
+			<Head>
+				<meta name='google-site-verification' content='7Y7F3yoq29oVJycbzyi4J59HWp1O_EqQMoMROgcBjww' />
+			</Head>
+
 			<div className='min-h-screen flex flex-col'>
 				{/* Header */}
 				<header className='py-8'>

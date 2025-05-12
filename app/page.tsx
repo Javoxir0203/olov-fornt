@@ -95,13 +95,13 @@ const LandingPage = () => {
 
 				{/* Android and iOS Download Section */}
 				<div className='flex flex-col md:flex-row justify-center gap-4 md:gap-6'>
-					<Link href={'https://play.google.com/store/games'}>
+					<Link href={'https://play.google.com/store/'}>
 						<p className='bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md flex items-center space-x-4'>
 							<FaGooglePlay className='text-2xl' />
 							<span>Google Play</span>
 						</p>
 					</Link>
-					<Link href={'https://play.google.com/store/games'}>
+					<Link href={'https://www.apple.com/app-store/'}>
 						<p className='bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md flex items-center space-x-4'>
 							<FaApple className='text-2xl' />
 							<span>App Store</span>

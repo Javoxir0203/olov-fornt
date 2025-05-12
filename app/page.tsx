@@ -18,7 +18,6 @@ const LandingPage = () => {
 			localStorage.setItem('visitorCount', '1')
 			setVisitorCount(1)
 		}
-
 		console.log(`Saytga kirgan foydalanuvchilar soni: ${storedCount || 1}`)
 	}, [])
 
@@ -31,22 +30,19 @@ const LandingPage = () => {
 
 	return (
 		<div className='font-sans bg-gray-900 text-white'>
-			import Head from 'next/head'
 			<Head>
 				<meta name='google-site-verification' content='7Y7F3yoq29oVJycbzyi4J59HWp1O_EqQMoMROgcBjww' />
-				<title>Olov Platforma</title>
+				<title>Olov</title>
+				<meta name='description' content='Do‘konlaringizni reklama qiling' />
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
+				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<div className='min-h-screen flex flex-col'>
-				{/* Header */}
 				<header className='py-8'>
-					<div className='max-w-7xl mx-auto px-6 flex justify-between items-center'>
-						<h1 className='text-4xl md:text-5xl font-bold'>Olov</h1>
-					</div>
+					<div className='max-w-7xl mx-auto px-6 flex justify-between items-center'></div>
 				</header>
 
-				{/* Main Section */}
 				<main className='flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto w-full px-6 py-12 gap-8'>
-					{/* Left Content */}
 					<div className='w-full lg:w-1/2 text-center sm:text-left'>
 						<h2 className='text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight'>Do‘konlaringizni reklama qiling</h2>
 						<p className='text-lg sm:text-lg mb-6'>Olov - bu do‘konlarni reklama qilish uchun zamonaviy platforma. Foydalanuvchilarni jalb qilish uchun eng yaxshi joyni toping va sotuvlaringizni oshiring!</p>
@@ -57,15 +53,14 @@ const LandingPage = () => {
 								<Link href='#' className='bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-bold w-full sm:w-auto'>
 									Reklama boshlash
 								</Link>
-								<Link href='+998 77 001 59 99' className='bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-bold w-full sm:w-auto'>
+								<a href='tel:+998770015999' className='bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-bold w-full sm:w-auto'>
 									Biz bilan bog‘laning
-								</Link>
+								</a>
 							</div>
 						</div>
 						<p className='mt-4 text-sm text-gray-200'>Tugmani bosish orqali siz bizning shartlarimizga rozilik bildirasiz.</p>
 					</div>
 
-					{/* Right Content */}
 					<div className='w-full lg:w-1/2'>
 						<div className='bg-gray-800 text-white p-6 rounded-md shadow-lg h-auto lg:h-[350px]'>
 							<h3 className='text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8'>Platforma haqida</h3>
@@ -77,9 +72,8 @@ const LandingPage = () => {
 					</div>
 				</main>
 			</div>
-			{/* Contact Section */}
+
 			<section className='py-12 px-6 gap-4 md:gap-6 h-screen bg-gray-900 flex flex-col lg:flex-row items-center justify-between'>
-				{/* Left Section - Contact Form */}
 				<div className='max-w-4xl mx-auto text-center md:text-left'>
 					<h2 className='text-3xl sm:text-4xl lg:text-5xl font-bold mb-6'>Biz bilan bog‘laning</h2>
 					<p className='text-lg sm:text-xl leading-relaxed mb-8'>Do‘koningizni reklama qilish yoki qo‘shimcha ma’lumot olish uchun bizga murojaat qiling.</p>
@@ -93,20 +87,15 @@ const LandingPage = () => {
 					</form>
 				</div>
 
-				{/* Android and iOS Download Section */}
 				<div className='flex flex-col md:flex-row justify-center gap-4 md:gap-6'>
-					<Link href={'https://play.google.com/store/'}>
-						<p className='bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md flex items-center space-x-4'>
-							<FaGooglePlay className='text-2xl' />
-							<span>Google Play</span>
-						</p>
-					</Link>
-					<Link href={'https://www.apple.com/app-store/'}>
-						<p className='bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md flex items-center space-x-4'>
-							<FaApple className='text-2xl' />
-							<span>App Store</span>
-						</p>
-					</Link>
+					<a href='https://play.google.com/store/' target='_blank' rel='noopener noreferrer' className='bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md flex items-center space-x-4'>
+						<FaGooglePlay className='text-2xl' />
+						<span>Google Play</span>
+					</a>
+					<a href='https://www.apple.com/app-store/' target='_blank' rel='noopener noreferrer' className='bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-md flex items-center space-x-4'>
+						<FaApple className='text-2xl' />
+						<span>App Store</span>
+					</a>
 				</div>
 			</section>
 		</div>
